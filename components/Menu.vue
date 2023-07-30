@@ -10,7 +10,7 @@
         <li>Kontakt</li>
       </ul>
     </div>
-    <div class="flex lg:hidden flex-col gap-3 items-start">
+    <div class="flex lg:hidden flex-col gap-3 items-start mt-6">
       <button class="bg-red rounded-full text-white">
         <a href="tel:+48453413191">
           <img src="@/assets/img/icons/phone.png" />
@@ -40,7 +40,7 @@
   }
   .menu {
     &--wrapper {
-      @apply fixed right-0 top-0 w-11/12 md:w-9/12 lg:w-5/12 flex-col items-center  justify-center lg:justify-start lg:pt-32 h-screen transition-all flex container pl-3 pr-3;
+      @apply fixed right-0 top-0 w-11/12 md:w-9/12 lg:w-5/12 flex-col items-center  justify-center lg:justify-start lg:pt-32 h-screen transition-all flex container pl-3 pr-3 bg-white;
       box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
       right: -900px;
 
