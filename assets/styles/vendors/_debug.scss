@@ -1,7 +1,7 @@
 html,
 body {
   &::after {
-    @apply flex fixed left-0 bottom-0 w-screen bg-gray;
+    @apply flex fixed left-0 bottom-0 w-screen bg-gray z-50;
     content: 'xs';
 
     @media (min-width: 640px) {

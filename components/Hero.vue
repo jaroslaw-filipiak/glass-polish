@@ -14,7 +14,7 @@
         </button>
       </div>
 
-      <div class="hero--img lg:w-5/12">
+      <div class="hero--img lg:w-5/12 max-lg:overflow-hidden">
         <img
           class="hidden xl:min-w-[396px] lg:absolute lg:block lg:right-0 lg:-top-[6%] xl:-top-[8%]"
           src="@/assets/img/hero--desktop.png"
@@ -33,7 +33,7 @@
 
 <style lang="scss" scoped>
   .hero {
-    @apply container pl-3 pr-3 flex flex-col items-center justify-center text-center lg:text-left gap-2 lg:mt-10;
+    @apply container pl-6 pr-6 flex flex-col items-center justify-center text-center lg:text-left gap-2 lg:mt-10;
 
     &--img {
       @apply absolute lg:relative bottom-0 left-0  max-lg:h-3/6 max-lg:w-full bg-cover bg-no-repeat max-lg:rounded-bl-[38px] max-lg:rounded-br-[38px];

@@ -6,6 +6,10 @@
   <div class="page--wrapper">
     <TopBar />
     <Hero />
+    <Features />
+    <Pricing />
+    <Portfolio />
+    <FeatureBox />
     <Menu />
   </div>
 </template>
