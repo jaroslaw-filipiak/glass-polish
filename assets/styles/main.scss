@@ -2,7 +2,7 @@
 
 html,
 body {
-  @apply font-poppins bg-white;
+  @apply font-poppins bg-white lg:pt-3 max-w-7xl mx-auto;
 }
 
 @import './vendors/debug';

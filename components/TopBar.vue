@@ -4,7 +4,7 @@
       <div class="topbar--col">
         <img class="logo" src="~/assets/img/logo.svg" />
       </div>
-      <div class="topbar--col flex items-center justify-end">
+      <div class="topbar--col flex items-center justify-end z-20">
         <button
           @click="toggleVisible"
           class="hamburger hamburger--collapse"
@@ -32,7 +32,7 @@
   @import 'hamburgers/dist/hamburgers.css';
 
   .topbar {
-    @apply z-20 relative pl-3 pr-3;
+    @apply relative pl-3 pr-3;
     &--inner {
       @apply container flex items-stretch justify-between pt-4;
     }
