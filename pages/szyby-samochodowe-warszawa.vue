@@ -10,6 +10,9 @@
     <Pricing />
     <Portfolio />
     <FeatureBox />
+    <Opinions />
+    <CTA />
+    <Footer />
     <Menu />
   </div>
 </template>

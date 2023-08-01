@@ -5,4 +5,42 @@ body {
   @apply font-poppins bg-white lg:pt-3  mx-auto;
 }
 
+.list-dotted {
+  @apply flex flex-wrap gap-5 mt-5 list-none;
+  li {
+    @apply text-[19px] lg:text-[26px] xl:text-[34px] font-bold relative pl-4;
+    &:before {
+      @apply text-main;
+      content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: 0; /* Also needed for space (tweak if needed) */
+    }
+  }
+}
+
+.btn-main {
+  @apply text-[17px] lg:text-[28px] font-bold text-center   hover:opacity-90 transition-all max-md:w-[214px] h-[46px] lg:pl-6 lg:pr-6 rounded-full lg:w-[333px] lg:h-[64px] lg:mt-3;
+
+  a {
+    @apply flex justify-center items-center gap-3;
+  }
+}
+
+.link-underline {
+  @apply relative inline-block;
+  &:after {
+    content: '';
+    @apply block w-full opacity-0 h-[2px] bg-white absolute left-0 -bottom-1 transition-all origin-center;
+  }
+
+  &:hover {
+    &:after {
+      @apply w-full opacity-100;
+    }
+  }
+}
+
 @import './vendors/debug';

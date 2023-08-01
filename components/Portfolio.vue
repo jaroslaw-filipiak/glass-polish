@@ -7,9 +7,17 @@
         Nasze realizacje →
       </h3>
 
-      <div class="relative flex pt-16 gap-5 left-0 w-screen">
+      <div class="flex pt-10 lg:pt-16 gap-5 w-[300vw] md:w-[200vw]">
         <div class="flex">
           <img src="@/assets/img/portfolio-1.jpg" alt="" />
+        </div>
+
+        <div class="flex">
+          <img src="@/assets/img/portfolio-2.png" alt="" />
+        </div>
+
+        <div class="flex">
+          <img src="@/assets/img/portfolio-3.png" alt="" />
         </div>
 
         <div class="flex">
@@ -17,12 +25,25 @@
         </div>
 
         <div class="flex">
-          <img src="@/assets/img/portfolio-1.jpg" alt="" />
+          <img src="@/assets/img/portfolio-2.png" alt="" />
         </div>
+      </div>
 
-        <div class="flex">
-          <img src="@/assets/img/portfolio-1.jpg" alt="" />
-        </div>
+      <div>
+        <ul class="text-dark font-bold text-[19px] lg:text-[34px]">
+          <li>
+            <img src="@/assets/img/icons/cross.png" alt="" />
+            Bez pęknięć
+          </li>
+          <li>
+            <img src="@/assets/img/icons/cross.png" alt="" />
+            bez zmatowień
+          </li>
+          <li>
+            <img src="@/assets/img/icons/cross.png" alt="" />
+            bez soczewek i rozmyć
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -32,10 +53,17 @@
 
 <style lang="scss" scoped>
   .portfolio {
-    @apply pt-20 pb-20 pl-6 pr-6 overflow-hidden;
+    @apply lg:pt-20 lg:pb-20 pl-6 pr-6 overflow-hidden;
 
     &--inner {
-      @apply pt-10 pb-10 container relative  lg:pl-[84px];
+      @apply pt-10 pb-10 container relative lg:pl-[84px];
+    }
+
+    ul {
+      @apply mt-10  lg:mt-16 flex flex-wrap gap-5 max-w-2xl;
+      li {
+        @apply flex items-center gap-3;
+      }
     }
   }
 </style>

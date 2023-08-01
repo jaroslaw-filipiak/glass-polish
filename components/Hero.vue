@@ -6,7 +6,9 @@
       >
         <h1>Polerowanie szyb samochodowych</h1>
         <h2><span class="text-main">Warszawa</span> i okolice</h2>
-        <button class="bg-red rounded-[36px] text-white max-lg:w-[214px]">
+        <button
+          class="bg-red rounded-[36px] text-white max-lg:w-[214px] btn-main"
+        >
           <a href="tel:+48453413191">
             <img class="max-lg:w-[20px]" src="@/assets/img/icons/phone.svg" />
             <span>+48 453 413 191</span></a
@@ -62,14 +64,6 @@
 
     h2 {
       @apply text-[19px] font-bold leading-[41px] lg:text-[34px] lg:pt-3 lg:pb-3;
-    }
-
-    button {
-      @apply text-[17px] lg:text-[28px] font-bold text-center   hover:opacity-90 transition-all max-md:w-[214px] h-[46px] lg:pl-6 lg:pr-6 rounded-full lg:w-[333px] lg:h-[64px] lg:mt-3;
-
-      a {
-        @apply flex justify-center items-center gap-3;
-      }
     }
   }
 </style>
