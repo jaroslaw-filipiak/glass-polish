@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer" id="kontakt">
     <div class="footer--inner">
       <h3 class="font-extrabold text-[30px] lg:text-[41px] xl:text-[53px]">
         Kontakt
@@ -7,7 +7,7 @@
       <div class="row">
         <div class="w-full lg:w-7/12 xl:w-5/12">
           <div class="flex flex-col items-start">
-            <div class="flex flex-col mt-6">
+            <div class="inline-flex flex-col mt-6">
               <a
                 class="font-bold text-[19px] lg:text-[31px] text-main"
                 href="tel:+48 453 413 191"
@@ -41,7 +41,12 @@
         <div
           class="w-full lg:w-5/12 xl:w-7/12 flex justify-start lg:pl-20 xl:pl-36 max-lg:mt-6"
         >
-          <img class="max-lg:mx-auto" src="@/assets/img/map.png" alt="" />
+          <a
+            target="_blank"
+            href="https://www.google.com/maps/place/%C5%81opusza%C5%84ska+35,+02-220+Warszawa/data=!4m2!3m1!1s0x4719335855058e15:0x1a0d7c1cb659068f?sa=X&ved=2ahUKEwikn_SmjryAAxW4iv0HHZsoAfsQ8gF6BAgPEAA&ved=2ahUKEwikn_SmjryAAxW4iv0HHZsoAfsQ8gF6BAgXEAI"
+          >
+            <img class="max-lg:mx-auto" src="@/assets/img/map.png" alt=""
+          /></a>
         </div>
       </div>
     </div>

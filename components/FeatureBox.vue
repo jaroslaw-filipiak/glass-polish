@@ -1,5 +1,5 @@
 <template>
-  <div class="feature-box">
+  <div class="feature-box" id="technologia">
     <div class="feature-box--inner">
       <div>
         <h3

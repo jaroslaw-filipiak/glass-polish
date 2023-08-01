@@ -2,12 +2,14 @@
   <div class="menu--wrapper" :class="{ 'is-active': isVisible }">
     <div>
       <ul class="main-menu">
-        <li>Co usuwamy</li>
-        <li>Cennik</li>
-        <li>Nasze realizacje</li>
-        <li>Technologia</li>
-        <li>Opinie</li>
-        <li>Kontakt</li>
+        <li><a @click="handleClick" href="#co-usuwamy">Co usuwamy</a></li>
+        <li><a @click="handleClick" href="#cennik">Cennik</a></li>
+        <li>
+          <a @click="handleClick" href="#nasze-realizacje">Nasze realizacje</a>
+        </li>
+        <li><a @click="handleClick" href="#technologia">Technologia</a></li>
+        <li><a @click="handleClick" href="#opinie">Opinie</a></li>
+        <li><a @click="handleClick" href="#kontakt">Kontakt</a></li>
       </ul>
     </div>
     <div class="flex lg:hidden flex-col gap-3 items-start mt-6">
@@ -32,6 +34,10 @@
   import { storeToRefs } from 'pinia';
   const store = useNavStore();
   const { isVisible } = storeToRefs(store);
+
+  const handleClick = () => {
+    store.toggleVisible();
+  };
 </script>
 
 <style lang="scss" scoped>

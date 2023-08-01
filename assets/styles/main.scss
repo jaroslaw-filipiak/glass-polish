@@ -29,18 +29,29 @@ body {
   }
 }
 
-.link-underline {
-  @apply relative inline-block;
-  &:after {
-    content: '';
-    @apply block w-full opacity-0 h-[2px] bg-white absolute left-0 -bottom-1 transition-all origin-center;
-  }
-
-  &:hover {
-    &:after {
-      @apply w-full opacity-100;
-    }
-  }
+a {
+  @apply hover:opacity-80 transition-all;
 }
+
+// .link-underline {
+//   @apply relative inline-block;
+//   &:after {
+//     content: '';
+//     @apply block w-full opacity-0 h-[2px] bg-white absolute left-0 -bottom-1 transition-all origin-center;
+//   }
+
+//   &:hover {
+//     &:after {
+//       @apply w-full opacity-100;
+//     }
+//   }
+
+//   &__main {
+//     &:after {
+//       content: '';
+//       @apply block w-full opacity-0 h-[2px] bg-main absolute left-0 -bottom-1 transition-all origin-center;
+//     }
+//   }
+// }
 
 @import './vendors/debug';

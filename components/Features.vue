@@ -1,5 +1,5 @@
 <template>
-  <div class="features">
+  <div class="features" id="co-usuwamy">
     <div class="features--inner">
       <h3 class="text-[30px] lg:text-[41px] xl:text-[53px] font-extrabold">
         Co usuwamy
