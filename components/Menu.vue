@@ -19,7 +19,10 @@
           <span>+48 453 413 191</span></a
         >
       </button>
-      <button class="bg-white border-[3px] border-dark rounded-full text-dark">
+      <button
+        @click.prevent="showForm"
+        class="bg-white border-[3px] border-dark rounded-full text-dark"
+      >
         <a href="tel:+48453413191">
           <img src="@/assets/img/icons/envelope.svg" />
           <span>Formularz</span></a
@@ -31,12 +34,21 @@
 
 <script setup>
   import { useNavStore } from '@/stores/index';
+  import { useFormStore } from '@/stores/form';
   import { storeToRefs } from 'pinia';
   const store = useNavStore();
+  const formStore = useFormStore();
+
   const { isVisible } = storeToRefs(store);
+  const { isFormVisible } = storeToRefs(formStore);
 
   const handleClick = () => {
     store.toggleVisible();
+  };
+
+  const showForm = () => {
+    store.toggleVisible();
+    formStore.showForm();
   };
 </script>
 

@@ -7,6 +7,7 @@
         Wypoleruj szyby jeszcze dzisiaj
       </h3>
       <button
+        @click.prevent="showForm"
         class="bg-red rounded-[36px] text-white max-lg:w-[214px] btn-main"
       >
         <a href="tel:+48453413191"> <span>Umów termin</span></a>
@@ -21,7 +22,15 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  import { useFormStore } from '@/stores/form';
+  import { storeToRefs } from 'pinia';
+  const store = useFormStore();
+
+  const showForm = () => {
+    store.showForm();
+  };
+</script>
 
 <style lang="scss" scoped>
   .cta {

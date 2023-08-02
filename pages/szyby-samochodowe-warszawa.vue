@@ -15,6 +15,6 @@
     <Footer />
     <!-- relative -->
     <Menu />
-    <!-- <FormBox /> -->
+    <FormBox />
   </div>
 </template>
