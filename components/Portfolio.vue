@@ -2,7 +2,7 @@
   <div class="portfolio" id="nasze-realizacje">
     <div class="portfolio--inner">
       <h3
-        class="text-[30px] lg:text-[41px] xl:text-[53px] font-extrabold text-dark flex items-center gap-4"
+        class="text-[30px] lg:text-[41px] xl:text-[53px] font-extrabold text-dark flex items-center gap-4 mb-12"
       >
         <span> Nasze realizacje</span>
         <svg
@@ -19,27 +19,125 @@
         </svg>
       </h3>
 
-      <div class="flex pt-10 lg:pt-16 gap-5 w-[300vw] md:w-[200vw]">
-        <div class="flex">
-          <img src="@/assets/img/portfolio-1.jpg" alt="" />
-        </div>
+      <swiper
+        :modules="[EffectFade]"
+        class="overflow-visible relative left-24 w-screen"
+        :slides-per-view="1"
+        :loop="true"
+        :autoplay="{
+          delay: 999999999,
+          disableOnInteraction: true,
+        }"
+        :space-between="20"
+        :breakpoints="{
+          '640': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          '768': {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          '1024': {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+        }"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+      >
+        <swiper-slide v-for="i in 10" :key="i">
+          <div class="flex rounded-[38px] overflow-hidden w-[300px] h-[300px]">
+            <img
+              class="w-[300px] h-[300px] object-cover"
+              :src="'img/slider-portfolio/' + i + '.jpeg'"
+              alt=""
+            />
+          </div>
+        </swiper-slide>
+      </swiper>
 
-        <div class="flex">
-          <img src="@/assets/img/portfolio-2.png" alt="" />
-        </div>
-
-        <div class="flex">
-          <img src="@/assets/img/portfolio-3.png" alt="" />
-        </div>
-
-        <div class="flex">
-          <img src="@/assets/img/portfolio-1.jpg" alt="" />
-        </div>
-
-        <div class="flex">
-          <img src="@/assets/img/portfolio-2.png" alt="" />
-        </div>
-      </div>
+      <!-- <Swiper
+        class="overflow-visible relative left-24 w-screen swiper1"
+        :instanceName="swiper_portfolio"
+        ref="swiper1"
+        :prefix="swiper1"
+        :modules="[SwiperAutoplay, SwiperEffectCreative]"
+        :slides-per-view="2"
+        :loop="true"
+        :grabCursor="true"
+        :autoplay="{
+          delay: 999999999,
+          disableOnInteraction: true,
+        }"
+        :spaceBetween="29"
+        ,
+        :breakpoints="{
+          '640': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          '768': {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          '1024': {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }"
+      >
+        <SwiperSlide>
+          <div class="flex">
+            <img src="@/assets/img/portfolio-1.jpeg" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div class="flex">
+            <img src="@/assets/img/portfolio-1.jpeg" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div class="flex">
+            <img src="@/assets/img/portfolio-1.jpeg" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div class="flex">
+            <img src="@/assets/img/portfolio-1.jpeg" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div class="flex">
+            <img src="@/assets/img/portfolio-1.jpeg" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div class="flex">
+            <img src="@/assets/img/portfolio-1.jpeg" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div class="flex">
+            <img src="@/assets/img/portfolio-1.jpeg" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div class="flex">
+            <img src="@/assets/img/portfolio-1.jpeg" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div class="flex">
+            <img src="@/assets/img/portfolio-1.jpeg" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div class="flex">
+            <img src="@/assets/img/portfolio-1.jpeg" alt="" />
+          </div>
+        </SwiperSlide>
+      </Swiper> -->
 
       <div>
         <ul class="text-dark font-bold text-[19px] lg:text-[34px]">
@@ -61,7 +159,20 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  import { EffectFade } from 'swiper/modules';
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+
+  import 'swiper/css';
+  import 'swiper/css/effect-fade';
+
+  const onSwiper = (swiper) => {
+    console.log(swiper);
+  };
+  const onSlideChange = () => {
+    console.log('slide change');
+  };
+</script>
 
 <style lang="scss" scoped>
   .portfolio {

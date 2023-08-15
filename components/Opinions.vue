@@ -19,7 +19,165 @@
         </svg>
       </h3>
 
-      <div class="flex pt-10 lg:pt-16 gap-5 w-[300vw] md:w-[200vw]">
+      <swiper
+        class="overflow-visible relative left-24 w-screen"
+        :slides-per-view="2"
+        :space-between="20"
+        :breakpoints="{
+          '640': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          '768': {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          '1024': {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+      >
+        <swiper-slide>
+          <div>
+            <img
+              class="min-w-full h-auto"
+              src="@/assets/img/g-1.png"
+              alt=""
+            /></div
+        ></swiper-slide>
+        <swiper-slide>
+          <div>
+            <img
+              class="min-w-full h-auto"
+              src="@/assets/img/g-1.png"
+              alt=""
+            /></div
+        ></swiper-slide>
+        <swiper-slide>
+          <div>
+            <img
+              class="min-w-full h-auto"
+              src="@/assets/img/g-1.png"
+              alt=""
+            /></div
+        ></swiper-slide>
+        <swiper-slide>
+          <div>
+            <img
+              class="min-w-full h-auto"
+              src="@/assets/img/g-1.png"
+              alt=""
+            /></div
+        ></swiper-slide>
+        <swiper-slide>
+          <div>
+            <img
+              class="min-w-full h-auto"
+              src="@/assets/img/g-1.png"
+              alt=""
+            /></div
+        ></swiper-slide>
+        <swiper-slide>
+          <div>
+            <img
+              class="min-w-full h-auto"
+              src="@/assets/img/g-1.png"
+              alt=""
+            /></div
+        ></swiper-slide>
+        <swiper-slide>
+          <div>
+            <img
+              class="min-w-full h-auto"
+              src="@/assets/img/g-1.png"
+              alt=""
+            /></div
+        ></swiper-slide>
+        <swiper-slide>
+          <div>
+            <img
+              class="min-w-full h-auto"
+              src="@/assets/img/g-1.png"
+              alt=""
+            /></div
+        ></swiper-slide>
+        <swiper-slide>
+          <div>
+            <img
+              class="min-w-full h-auto"
+              src="@/assets/img/g-1.png"
+              alt=""
+            /></div
+        ></swiper-slide>
+        <swiper-slide>
+          <div>
+            <img
+              class="min-w-full h-auto"
+              src="@/assets/img/g-1.png"
+              alt=""
+            /></div
+        ></swiper-slide>
+      </swiper>
+
+      <!-- <Swiper
+        class="overflow-visible relative left-24 w-screen swiper2"
+        :instanceName="swiper_opinions"
+        ref="swiper_opinions"
+        :prefix="swiper2"
+        :modules="[SwiperAutoplay, SwiperEffectCreative]"
+        :slides-per-view="2"
+        :loop="true"
+        :grabCursor="true"
+        :autoplay="{
+          delay: 999999999,
+          disableOnInteraction: true,
+        }"
+        :spaceBetween="29"
+        ,
+        :breakpoints="{
+          '640': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          '768': {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          '1024': {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }"
+      >
+        <SwiperSlide>
+          <div>
+            <img class="min-w-full h-auto" src="@/assets/img/g-1.png" alt="" />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div>
+            <img class="min-w-full h-auto" src="@/assets/img/g-1.png" alt="" />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div>
+            <img class="min-w-full h-auto" src="@/assets/img/g-1.png" alt="" />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div>
+            <img class="min-w-full h-auto" src="@/assets/img/g-1.png" alt="" />
+          </div>
+        </SwiperSlide>
+      </Swiper> -->
+
+      <div class="flex pt-10 lg:pt-16 gap-5 w-[300vw] md:w-[200vw] hidden">
         <div>
           <img class="min-w-full h-auto" src="@/assets/img/g-1.png" alt="" />
         </div>
@@ -44,7 +202,17 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+  import 'swiper/css';
+
+  const onSwiper = (swiper) => {
+    console.log(swiper);
+  };
+  const onSlideChange = () => {
+    console.log('slide change');
+  };
+</script>
 
 <style lang="scss" scoped>
   .opinions {

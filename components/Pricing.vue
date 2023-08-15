@@ -46,7 +46,7 @@
     background-image: url('@/assets/img/bg.jpg');
 
     &--inner {
-      @apply pt-10 pb-10 container lg:pt-20 lg:pb-20 lg:pl-[84px];
+      @apply pt-10 pb-10 container lg:pt-20 lg:pb-20 lg:pl-[84px] lg:pr-[90px];
 
       ul {
         @apply flex flex-col gap-3 mt-6 overflow-hidden;

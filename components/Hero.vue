@@ -50,7 +50,7 @@
     }
 
     &--inner {
-      @apply max-lg:pt-[65px] max-lg:pb-[263px] bg-gray rounded-[38px]  relative w-full flex flex-col items-center  lg:flex-row lg:justify-start lg:pl-[84px] lg:pr-[84px] lg:relative lg:items-stretch lg:gap-12 xl:h-[436px];
+      @apply max-lg:pt-[65px] max-lg:pb-[263px] bg-gray rounded-[38px]  relative w-full flex flex-col items-center  lg:flex-row lg:justify-start lg:pl-[59px] lg:pr-[84px] lg:relative lg:items-stretch lg:gap-12 xl:h-[436px];
     }
 
     h1,
