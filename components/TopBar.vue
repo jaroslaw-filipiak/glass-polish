@@ -23,7 +23,7 @@
 </template>
 
 <script setup>
-  import { useNavStore } from '@/stores/index';
+  import { useNavStore } from '@/stores/nav';
   import { storeToRefs } from 'pinia';
   const store = useNavStore();
   const { isVisible } = storeToRefs(store);

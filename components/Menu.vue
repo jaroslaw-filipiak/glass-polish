@@ -33,7 +33,7 @@
 </template>
 
 <script setup>
-  import { useNavStore } from '@/stores/index';
+  import { useNavStore } from '@/stores/nav';
   import { useFormStore } from '@/stores/form';
   import { storeToRefs } from 'pinia';
   const store = useNavStore();

@@ -8,11 +8,21 @@
         <div class="w-full lg:w-7/12 xl:w-5/12">
           <div class="flex flex-col items-start">
             <div class="inline-flex flex-col mt-6">
-              <a
-                class="font-bold text-[19px] lg:text-[31px] text-main"
-                href="tel:+48 453 413 191"
-                >+48 453 413 191</a
-              >
+              <div @click="store.handleNumber3()" class="cursor-pointer">
+                <a
+                  v-if="store.showNumber3"
+                  class="font-bold text-[19px] lg:text-[31px] text-main"
+                  href="tel:+48 453 413 191"
+                  >+48 453 413 191</a
+                >
+                <p
+                  class="font-bold text-[19px] lg:text-[31px] text-main"
+                  v-else
+                >
+                  Pokaż numer
+                </p>
+              </div>
+
               <a
                 class="font-bold text-[19px] lg:text-[31px] underline"
                 href="mailto:kontakt@polerowanie-szyb.pl"
@@ -53,7 +63,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  import { useMainStore } from '@/stores/main';
+  const store = useMainStore();
+</script>
 
 <style lang="scss" scoped>
   .footer {

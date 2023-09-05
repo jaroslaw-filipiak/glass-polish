@@ -7,12 +7,16 @@
         <h1>Polerowanie szyb samochodowych</h1>
         <h2><span class="text-main">Warszawa</span> i okolice</h2>
         <button
+          @click="store.handleNumber1()"
           class="bg-red rounded-[36px] text-white max-lg:w-[214px] btn-main"
         >
-          <a href="tel:+48453413191">
-            <img class="max-lg:w-[20px]" src="@/assets/img/icons/phone.svg" />
-            <span>+48 453 413 191</span></a
-          >
+          <p v-if="store.showNumber1">
+            <a href="tel:+48453413191">
+              <img class="max-lg:w-[20px]" src="@/assets/img/icons/phone.svg" />
+              <span> +48 453 413 191</span></a
+            >
+          </p>
+          <p v-else>Pokaż numer</p>
         </button>
       </div>
 
@@ -31,7 +35,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  import { useMainStore } from '@/stores/main';
+  const store = useMainStore();
+</script>
 
 <style lang="scss" scoped>
   .hero {

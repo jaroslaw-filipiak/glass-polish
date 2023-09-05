@@ -13,19 +13,28 @@
         <a href="tel:+48453413191"> <span>Umów termin</span></a>
       </button>
       <p class="font-bold text-[14px] lg:text-[20px]">lub zadzwoń</p>
-      <a
-        class="font-extrabold text-[28px] lg:text-[38px] link-underline"
-        href="tel:+48 453413191"
-        >+48 453 413 191</a
-      >
+      <div @click="mainStore.handleNumber2()">
+        <a
+          v-if="mainStore.showNumber2"
+          class="font-extrabold text-[28px] lg:text-[38px] link-underline"
+          href="tel:+48 453413191"
+          >+48 453 413 191</a
+        >
+        <p v-else class="text-[28px] lg:text-[38px] font-bold cursor-pointer">
+          Pokaż numer
+        </p>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
   import { useFormStore } from '@/stores/form';
+  import { useMainStore } from '@/stores/main';
   import { storeToRefs } from 'pinia';
+
   const store = useFormStore();
+  const mainStore = useMainStore();
 
   const showForm = () => {
     store.showForm();
