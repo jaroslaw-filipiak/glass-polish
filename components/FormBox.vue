@@ -148,7 +148,7 @@
 
     axios
       .post(
-        'https://j-filipiak.pl/api/wp-json/contact-form-7/v1/contact-forms/40/feedback',
+        'https://polerowanie-szyb.pl/wp-json/contact-form-7/v1/contact-forms/3753/feedback',
         form
       )
       .then(function (response) {
