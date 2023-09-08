@@ -12,18 +12,13 @@
       >
         <a href="tel:+48453413191"> <span>Umów termin</span></a>
       </button>
-      <p class="font-bold text-[14px] lg:text-[20px]">lub zadzwoń</p>
-      <div @click="mainStore.handleNumber2()">
-        <a
-          v-if="mainStore.showNumber2"
-          class="font-extrabold text-[28px] lg:text-[38px] link-underline"
-          href="tel:+48 453413191"
-          >+48 453 413 191</a
-        >
-        <p v-else class="text-[28px] lg:text-[38px] font-bold cursor-pointer">
-          Pokaż numer
-        </p>
-      </div>
+      <p
+        @click="mainStore.handleNumber2()"
+        class="font-bold text-[14px] lg:text-[20px] cursor-pointer hover:opacity-90"
+      >
+        lub zadzwoń +48
+        {{ mainStore.showNumber2 ? '453 413 191' : '( pokaż numer )' }}
+      </p>
     </div>
   </div>
 </template>
