@@ -4,6 +4,7 @@
   const features = ['rysy', 'odpryski', 'zmatowienia', 'ślady wycieraczek'];
 
   import imgDesktopPath from '@/assets/img/hero--desktop.png';
+  import imgMobilePath from '@/assets/img/hero--mobile.png';
 </script>
 
 <template>
@@ -12,7 +13,7 @@
     <Hero
       title="Polerowanie szyb samochodowych"
       city="Warszawa"
-      imgMobile="@/assets/img/hero--mobile.png"
+      :imgMobile="imgMobilePath"
       :imgDesktop="imgDesktopPath"
     />
     <Features :list="features" />
