@@ -12,13 +12,24 @@
       >
         <a href="tel:+48453413191"> <span>Umów termin</span></a>
       </button>
-      <p
-        @click="mainStore.handleNumber2()"
-        class="font-bold text-[14px] lg:text-[20px] cursor-pointer hover:opacity-90"
-      >
-        lub zadzwoń +48
-        {{ mainStore.showNumber2 ? '453 413 191' : '( pokaż numer )' }}
-      </p>
+      <div class="flex flex-col items-center">
+        <div class="font-bold text-[14px] lg:text-[20px]">lub zadzwoń</div>
+        <div
+          @click="mainStore.handleNumber2()"
+          class="font-bold text-[14px] lg:text-[26px] cursor-pointer hover:opacity-90 flex justify-center flex-col items-center"
+        >
+          <div class="flex">
+            <img
+              class="max-lg:w-[12px] lg:w-[28px] lg:mr-2"
+              src="@/assets/img/icons/phone.svg"
+            />
+            <div>+48&nbsp;</div>
+            <div>
+              {{ mainStore.showNumber2 ? '453 413 191' : '( pokaż numer )' }}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

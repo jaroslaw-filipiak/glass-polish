@@ -9,7 +9,6 @@
         <li>odpryski</li>
         <li>zmatowienia</li>
         <li>ślady wycieraczek</li>
-        <li>soczewki</li>
       </ul>
     </div>
   </div>
