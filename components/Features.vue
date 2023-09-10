@@ -5,16 +5,20 @@
         Co usuwamy
       </h3>
       <ul class="lg:max-w-2xl list-dotted">
-        <li>rysy</li>
-        <li>odpryski</li>
-        <li>zmatowienia</li>
-        <li>ślady wycieraczek</li>
+        <li v-for="(feature, index) in list" :key="index">{{ feature }}</li>
       </ul>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  const props = defineProps({
+    list: {
+      type: Array,
+      required: true,
+    },
+  });
+</script>
 
 <style lang="scss" scoped>
   .features {

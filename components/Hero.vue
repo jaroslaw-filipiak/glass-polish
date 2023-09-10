@@ -4,8 +4,10 @@
       <div
         class="lg:w-7/12 lg:scale-75 origin-left xl:scale-100 xl:flex xl:flex-col xl:items-start xl:justify-center"
       >
-        <h1>Polerowanie szyb samochodowych</h1>
-        <h2><span class="text-main">Warszawa</span> i okolice</h2>
+        <h1>{{ title }}</h1>
+        <h2>
+          <span class="text-main">{{ city }}</span> i okolice
+        </h2>
         <button
           @click="store.handleNumber1()"
           class="bg-red rounded-[36px] text-white max-lg:w-[214px] btn-main"
@@ -20,10 +22,12 @@
         </button>
       </div>
 
-      <div class="hero--img lg:w-5/12 max-lg:overflow-hidden">
+      <div
+        :class="`hero--img lg:w-5/12 max-lg:overflow-hidden max-lg:bg-[url('${imgMobile}')]`"
+      >
         <img
           class="hidden xl:min-w-[396px] lg:absolute lg:block lg:right-0 lg:-top-[6%] xl:-top-[8%]"
-          src="@/assets/img/hero--desktop.png"
+          :src="imgDesktop"
           alt=""
         />
         <img
@@ -38,6 +42,25 @@
 <script setup>
   import { useMainStore } from '@/stores/main';
   const store = useMainStore();
+
+  const props = defineProps({
+    title: {
+      type: String,
+      required: true,
+    },
+    city: {
+      type: String,
+      required: true,
+    },
+    imgMobile: {
+      type: String,
+      required: true,
+    },
+    imgDesktop: {
+      type: String,
+      required: true,
+    },
+  });
 </script>
 
 <style lang="scss" scoped>
@@ -47,9 +70,9 @@
     &--img {
       @apply absolute lg:relative bottom-0 left-0  max-lg:h-3/6 max-lg:w-full bg-cover bg-no-repeat max-lg:rounded-bl-[38px] max-lg:rounded-br-[38px];
 
-      @media (max-width: 1024px) {
-        background-image: url('@/assets/img/hero--mobile.png');
-      }
+      // @media (max-width: 1024px) {
+      //   background-image: imgMobile;
+      // }
     }
 
     &--overflow {

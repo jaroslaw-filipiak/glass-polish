@@ -1,12 +1,21 @@
 <script setup lang="ts">
   const route = useRoute();
+
+  const features = ['rysy', 'odpryski', 'zmatowienia', 'ślady wycieraczek'];
+
+  import imgDesktopPath from '@/assets/img/hero--desktop.png';
 </script>
 
 <template>
   <div class="page--wrapper">
     <TopBar />
-    <Hero />
-    <Features />
+    <Hero
+      title="Polerowanie szyb samochodowych"
+      city="Warszawa"
+      imgMobile="@/assets/img/hero--mobile.png"
+      :imgDesktop="imgDesktopPath"
+    />
+    <Features :list="features" />
     <Pricing />
     <Portfolio />
     <FeatureBox />
