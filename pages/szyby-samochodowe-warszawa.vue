@@ -13,7 +13,7 @@
     <Hero
       title="Polerowanie szyb samochodowych"
       city="Warszawa"
-      :imgMobile="imgMobilePath"
+      imgMobile="@/assets/img/hero--mobile.png"
       :imgDesktop="imgDesktopPath"
     />
     <Features :list="features" />
