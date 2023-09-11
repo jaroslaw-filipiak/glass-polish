@@ -22,19 +22,7 @@
         </button>
       </div>
 
-      <div
-        :class="`hero--img lg:w-5/12 max-lg:overflow-hidden max-lg:bg-[url('${imgMobile}')]`"
-      >
-        <img
-          class="hidden xl:min-w-[396px] lg:absolute lg:block lg:right-0 lg:-top-[6%] xl:-top-[8%]"
-          :src="imgDesktop"
-          alt=""
-        />
-        <img
-          class="w-full lg:hidden"
-          src="@/assets/img/hero--mobile--overflow.png"
-        />
-      </div>
+      <slot />
     </div>
   </div>
 </template>
