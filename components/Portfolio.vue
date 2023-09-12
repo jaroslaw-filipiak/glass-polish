@@ -46,7 +46,7 @@
         @swiper="onSwiper"
         @slideChange="onSlideChange"
       >
-        <swiper-slide v-for="i in 10" :key="i">
+        <swiper-slide v-for="i in 13" :key="i">
           <div class="flex rounded-[38px] overflow-hidden w-[300px] h-[300px]">
             <img
               class="w-[300px] h-[300px] object-cover"
