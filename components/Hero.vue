@@ -58,9 +58,9 @@
     &--img {
       @apply absolute lg:relative bottom-0 left-0  max-lg:h-3/6 max-lg:w-full bg-cover bg-no-repeat max-lg:rounded-bl-[38px] max-lg:rounded-br-[38px];
 
-      // @media (max-width: 1024px) {
-      //   background-image: imgMobile;
-      // }
+      @media (max-width: 1024px) {
+        background-image: '@/assets/img/hero--mobile.png';
+      }
     }
 
     &--overflow {
@@ -68,7 +68,8 @@
     }
 
     &--inner {
-      @apply max-lg:pt-[65px] max-lg:pb-[263px] bg-gray rounded-[38px]  relative w-full flex flex-col items-center  lg:flex-row lg:justify-start lg:pl-[59px] lg:pr-[84px] lg:relative lg:items-stretch lg:gap-12 xl:h-[436px];
+      @apply max-lg:pt-[65px]  bg-gray rounded-[38px]  w-full flex flex-col items-center  lg:flex-row lg:justify-start lg:pl-[59px] lg:pr-[84px] relative lg:items-stretch lg:gap-12 xl:h-[436px];
+      // max-lg:pb-[263px]
     }
 
     h1,

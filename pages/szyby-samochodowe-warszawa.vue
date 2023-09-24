@@ -12,10 +12,12 @@
           src="@/assets/img/hero--desktop.png"
           alt=""
         />
-        <img
-          class="w-full lg:hidden"
-          src="@/assets/img/hero--mobile--overflow.png"
-        />
+        <div class="img--mobile-wrapper relative">
+          <img
+            class="w-full lg:hidden mt-9"
+            src="@/assets/img/hero--mobile.png"
+          />
+        </div>
       </div>
     </Hero>
     <Features :list="features" />
