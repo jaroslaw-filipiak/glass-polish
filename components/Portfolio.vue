@@ -54,7 +54,11 @@
               alt=""
             />
           </div> -->
-          <img :src="'img/slider-portfolio/' + i + '.jpeg'" alt="" />
+          <img
+            class="rounded-[38px]"
+            :src="'img/slider-portfolio/p' + i + '.jpeg'"
+            alt=""
+          />
         </swiper-slide>
       </swiper>
 
