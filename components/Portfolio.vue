@@ -2,7 +2,7 @@
   <div class="portfolio" id="nasze-realizacje">
     <div class="portfolio--inner">
       <h3
-        class="text-[30px] lg:text-[41px] xl:text-[53px] font-extrabold text-dark flex items-center gap-4 mb-12"
+        class="text-[30px] lg:text-[41px] xl:text-[53px] font-extrabold text-dark flex items-center xl:gap-4 mb-12"
       >
         <span> Nasze realizacje</span>
         <svg
@@ -21,8 +21,8 @@
 
       <swiper
         :modules="[EffectFade]"
-        class="overflow-visible relative left-24 w-screen"
-        :slides-per-view="1"
+        class="overflow-visible relative xl:left-24 w-screen"
+        :slides-per-view="2"
         :loop="true"
         :autoplay="{
           delay: 999999999,
@@ -47,13 +47,14 @@
         @slideChange="onSlideChange"
       >
         <swiper-slide v-for="i in 13" :key="i">
-          <div class="flex rounded-[38px] overflow-hidden w-[300px] h-[300px]">
+          <!-- <div class="flex rounded-[38px] overflow-hidden w-[300px] h-[300px]">
             <img
               class="w-[300px] h-[300px] object-cover"
               :src="'img/slider-portfolio/' + i + '.jpeg'"
               alt=""
             />
-          </div>
+          </div> -->
+          <img :src="'img/slider-portfolio/' + i + '.jpeg'" alt="" />
         </swiper-slide>
       </swiper>
 

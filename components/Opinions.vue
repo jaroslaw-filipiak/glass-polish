@@ -20,7 +20,7 @@
       </h3>
 
       <swiper
-        class="overflow-visible relative left-24 w-screen"
+        class="overflow-visible relative xl:left-24 w-screen"
         :slides-per-view="2"
         :space-between="20"
         :breakpoints="{
@@ -44,7 +44,7 @@
           <div>
             <img
               class="min-w-full h-auto"
-              src="@/assets/img/g-1.png"
+              src="@/assets/img/opinion1.png"
               alt=""
             /></div
         ></swiper-slide>
@@ -52,7 +52,7 @@
           <div>
             <img
               class="min-w-full h-auto"
-              src="@/assets/img/g-1.png"
+              src="@/assets/img/opinion2.png"
               alt=""
             /></div
         ></swiper-slide>
@@ -60,7 +60,7 @@
           <div>
             <img
               class="min-w-full h-auto"
-              src="@/assets/img/g-1.png"
+              src="@/assets/img/opinion3.png"
               alt=""
             /></div
         ></swiper-slide>
@@ -68,7 +68,7 @@
           <div>
             <img
               class="min-w-full h-auto"
-              src="@/assets/img/g-1.png"
+              src="@/assets/img/opinion4.png"
               alt=""
             /></div
         ></swiper-slide>
@@ -76,7 +76,16 @@
           <div>
             <img
               class="min-w-full h-auto"
-              src="@/assets/img/g-1.png"
+              src="@/assets/img/opinion6.png"
+              alt=""
+            /></div
+        ></swiper-slide>
+
+        <swiper-slide>
+          <div>
+            <img
+              class="min-w-full h-auto"
+              src="@/assets/img/opinion1.png"
               alt=""
             /></div
         ></swiper-slide>
@@ -84,7 +93,7 @@
           <div>
             <img
               class="min-w-full h-auto"
-              src="@/assets/img/g-1.png"
+              src="@/assets/img/opinion2.png"
               alt=""
             /></div
         ></swiper-slide>
@@ -92,7 +101,7 @@
           <div>
             <img
               class="min-w-full h-auto"
-              src="@/assets/img/g-1.png"
+              src="@/assets/img/opinion3.png"
               alt=""
             /></div
         ></swiper-slide>
@@ -100,7 +109,7 @@
           <div>
             <img
               class="min-w-full h-auto"
-              src="@/assets/img/g-1.png"
+              src="@/assets/img/opinion4.png"
               alt=""
             /></div
         ></swiper-slide>
@@ -108,15 +117,7 @@
           <div>
             <img
               class="min-w-full h-auto"
-              src="@/assets/img/g-1.png"
-              alt=""
-            /></div
-        ></swiper-slide>
-        <swiper-slide>
-          <div>
-            <img
-              class="min-w-full h-auto"
-              src="@/assets/img/g-1.png"
+              src="@/assets/img/opinion6.png"
               alt=""
             /></div
         ></swiper-slide>
