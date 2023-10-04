@@ -15,7 +15,7 @@
         </li>
         <li>
           <span class="bg-main">Pojedyńczy odprysk</span>
-          <span class="bg-[#0278d0]"> od 150 zł</span>
+          <span class="bg-[#0278d0]"> od 250 zł</span>
         </li>
       </ul>
       <div>

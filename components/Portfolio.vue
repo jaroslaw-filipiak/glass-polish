@@ -161,15 +161,19 @@
 
       .next,
       .prev {
-        @apply w-20 h-20 bg-main rounded-full items-center justify-center text-white hover:scale-105 transition-all hidden lg:flex;
+        @apply w-12 h-12 lg:w-20 lg:h-20 bg-main rounded-full items-center justify-center text-white hover:scale-105 transition-all flex;
+
+        svg {
+          @apply scale-[55%] lg:scale-100;
+        }
       }
 
       .prev {
-        @apply right-10 relative;
+        @apply right-[20px] lg:right-10 relative;
       }
 
       .next {
-        @apply -right-10 relative;
+        @apply -right-[20px] lg:-right-10 relative;
       }
     }
   }

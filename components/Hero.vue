@@ -8,18 +8,49 @@
         <h2>
           <span class="text-main">{{ city }}</span> i okolice
         </h2>
-        <button
-          @click="store.handleNumber1()"
-          class="bg-red rounded-[36px] text-white max-lg:w-[214px] btn-main"
+        <div
+          class="flex flex-col lg:flex-row items-center justify-start gap-4 mt-3 lg:mt-0"
         >
-          <p v-if="store.showNumber1">
-            <a href="tel:+48453413191">
-              <img class="max-lg:w-[20px]" src="@/assets/img/icons/phone.svg" />
-              <span> +48 453 413 191</span></a
+          <button
+            @click="store.handleNumber1()"
+            class="bg-red rounded-[36px] text-white max-lg:w-[214px] btn-main"
+          >
+            <p v-if="store.showNumber1">
+              <a href="tel:+48453413191">
+                <img
+                  class="max-lg:w-[20px]"
+                  src="@/assets/img/icons/phone.svg"
+                />
+                <span> +48 453 413 191</span></a
+              >
+            </p>
+            <p v-else>Pokaż numer</p>
+          </button>
+
+          <button
+            class="bg-red rounded-[36px] text-white max-lg:w-[214px] btn-main"
+          >
+            <a
+              href="https://widget.zarezerwuj.pl/direct/e38d7efa-9278-4e74-bb4d-5a848d6bbda3"
+              target="_blank"
             >
-          </p>
-          <p v-else>Pokaż numer</p>
-        </button>
+              <!-- <img class="max-lg:w-[20px]" src="@/assets/img/icons/phone.svg" /> -->
+              <svg
+                aria-hidden="true"
+                style="height: 1em; width: 1em"
+                class="e-font-icon-svg e-far-calendar-alt transform-origin-star"
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"
+                  fill="#fff"
+                ></path>
+              </svg>
+              <span> zarezerwuj</span></a
+            >
+          </button>
+        </div>
       </div>
 
       <slot />
