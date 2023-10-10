@@ -47,7 +47,7 @@
                   fill="#fff"
                 ></path>
               </svg>
-              <span> zarezerwuj</span></a
+              <span> Zarezerwuj</span></a
             >
           </button>
         </div>
