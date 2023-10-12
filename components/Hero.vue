@@ -2,7 +2,7 @@
   <div class="hero">
     <div class="hero--inner">
       <div
-        class="lg:w-7/12 lg:scale-75 origin-left xl:scale-100 xl:flex xl:flex-col xl:items-start xl:justify-center"
+        class="lg:w-full lg:scale-75 origin-left xl:scale-100 xl:flex xl:flex-col xl:items-start xl:justify-center"
       >
         <h1>{{ title }}</h1>
         <h2>
