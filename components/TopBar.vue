@@ -2,9 +2,7 @@
   <div class="topbar">
     <div class="topbar--inner">
       <div class="topbar--col">
-        <a href="/szyby-samochodowe-warszawa"
-          ><img class="logo" src="~/assets/img/logo.svg"
-        /></a>
+        <a href="/"><img class="logo" src="~/assets/img/logo.svg" /></a>
       </div>
       <div class="topbar--col flex items-center justify-end z-20">
         <button

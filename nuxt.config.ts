@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   devtools: { enabled: false },
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
@@ -21,4 +23,11 @@ export default defineNuxtConfig({
       Poppins: [300, 400, 600, 700, 900],
     },
   },
+  app: {
+    baseURL: 'http://biallly.webd.pl/stagging/glass/',
+  },
 });
+
+// build: {
+//     publicPath: 'http://biallly.webd.pl/stagging/glass/',
+//   },
