@@ -1,6 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+  app: {
+    // baseURL: '/stagging/glass/',
+    // buildAssetsDir: '/mydir/_nuxt/',
+  },
+  plugins: ['~/plugins/hotjar.client.js'],
+
   devtools: { enabled: false },
 
   modules: [
@@ -8,7 +14,16 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@pinia/nuxt',
     '@vueuse/nuxt',
+    'nuxt-gtag',
+    // '@nuxtjs/google-adsense',
   ],
+
+  gtag: {
+    id: 'GTM-PQ42VB6',
+  },
+  // googleAdsense: {
+  //   id: 'AW-694904937',
+  // },
 
   css: ['~/assets/styles/main.scss'],
 
@@ -23,11 +38,4 @@ export default defineNuxtConfig({
       Poppins: [300, 400, 600, 700, 900],
     },
   },
-  app: {
-    baseURL: 'http://biallly.webd.pl/stagging/glass/',
-  },
 });
-
-// build: {
-//     publicPath: 'http://biallly.webd.pl/stagging/glass/',
-//   },

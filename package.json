@@ -14,9 +14,11 @@
     "@types/node": "^18.17.1",
     "@vueuse/core": "^10.3.0",
     "@vueuse/nuxt": "^10.3.0",
-    "nuxt": "^3.6.5"
+    "nuxt": "^3.6.5",
+    "nuxt-gtag": "^1.1.1"
   },
   "dependencies": {
+    "@nuxtjs/google-adsense": "^3.0.0",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@pinia/nuxt": "^0.4.11",
     "axios": "^1.4.0",
