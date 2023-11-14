@@ -59,6 +59,13 @@
           /></a>
         </div>
       </div>
+      <div class="row">
+        <div class="col w-full pt-10 pb-3">
+          <p class="text-[#414141] text-center opacity-20 mt-3">
+            Copyright 2012-2023 @GLASS POLISH
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </template>

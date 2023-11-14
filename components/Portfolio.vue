@@ -75,21 +75,21 @@
               spaceBetween: 20,
             },
             '768': {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 20,
             },
             '1024': {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 20,
             },
           }"
           @swiper="onSwiper"
           @slideChange="onSlideChange"
         >
-          <swiper-slide v-for="i in 10" :key="i">
+          <swiper-slide v-for="i in 4" :key="i">
             <img
               class="rounded-[38px]"
-              :src="'img/slider-portfolio/p' + i + '.jpeg'"
+              :src="'img/slider-szyby-okienne/' + i + '.jpg'"
               alt=""
             />
           </swiper-slide>
@@ -123,15 +123,6 @@
   import 'swiper/css';
   import 'swiper/css/effect-fade';
   import 'swiper/css/navigation';
-
-  const onSwiper = (swiper) => {
-    console.log('swiper');
-    console.log(swiper);
-  };
-  const onSlideChange = (swiper) => {
-    console.log('slide change');
-    console.log(swiper);
-  };
 </script>
 
 <style lang="scss" scoped>

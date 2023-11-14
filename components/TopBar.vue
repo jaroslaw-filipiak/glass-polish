@@ -5,6 +5,11 @@
         <a href="/"><img class="logo" src="~/assets/img/logo.svg" /></a>
       </div>
       <div class="topbar--col flex items-center justify-end z-20">
+        <!-- <a
+          href="tel:+48 453 413 191"
+          class="text-2xl font-bold -mt-2 pr-5 hover:opacity-80 hidden lg:block"
+          >+48 453 413 191</a
+        > -->
         <button
           @click="toggleVisible"
           class="hamburger hamburger--collapse"
@@ -33,6 +38,7 @@
 
   .topbar {
     @apply relative pl-3 pr-3;
+
     &--inner {
       @apply container flex items-stretch justify-between pt-4;
     }

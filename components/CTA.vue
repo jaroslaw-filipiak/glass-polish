@@ -4,7 +4,8 @@
       <h3
         class="text-[30px] lg:text-[41px] xl:text-[53px] font-extrabold text-center max-lg:max-w-[280px]"
       >
-        Wypoleruj szyby jeszcze dzisiaj
+        Wypoleruj szyby<br />
+        jeszcze dzisiaj
       </h3>
       <button
         @click.prevent="showForm"

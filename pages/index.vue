@@ -1,6 +1,6 @@
 <script setup>
   import { onMounted } from 'vue';
-  const features = ['rysy', 'odpryski', 'zmatowienia', 'ślady wycieraczek'];
+  const features = ['rysy', 'odpryski', 'zmatowienia', 'popalenia', 'soczewki'];
 
   onMounted(() => {
     const script = document.createElement('script');
