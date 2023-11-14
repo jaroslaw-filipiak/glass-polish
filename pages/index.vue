@@ -1,6 +1,6 @@
 <script setup>
   import { onMounted } from 'vue';
-  const features = ['rysy', 'odpryski', 'zmatowienia', 'ślady wycieraczek'];
+  const features = ['rysy', 'odpryski', 'zmatowienia', 'popalenia', 'soczewki'];
 
   onMounted(() => {
     const script = document.createElement('script');
@@ -38,10 +38,7 @@
 <template>
   <div class="page--wrapper">
     <TopBar />
-    <Hero
-      title="Polerowanie szyb samochodowych i naprawa odprysków"
-      city="Warszawa"
-    >
+    <Hero title="Polerowanie szyb okiennych" city="Warszawa">
       <div class="hero--img lg:w-5/12 max-lg:overflow-hidden">
         <img
           class="hidden xl:min-w-[396px] lg:absolute lg:block lg:right-0 lg:-top-[6%] xl:-top-[8%]"

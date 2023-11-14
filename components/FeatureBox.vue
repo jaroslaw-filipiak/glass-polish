@@ -13,7 +13,7 @@
         </h3>
         <ul class="list-dotted text-white flex-col">
           <li>lampy 360 i fototesty</li>
-          <li>pełne zabezpieczenie pojazdu</li>
+          <li>pełne zabezpieczenie szyby</li>
           <li>dobór chemii do typu szkła</li>
           <div class="pl-8 lg:pl-14 text-[13px] lg:text-[23px] font-bold">
             <p>w ramach każdej realizacji</p>
@@ -29,7 +29,7 @@
 <style lang="scss" scoped>
   .feature-box {
     @apply pl-6 pr-6 bg-cover bg-top bg-no-repeat pt-44 pb-44;
-    background-image: url('@/assets/img/featue-box-bg.png');
+    background-image: url('@/assets/img/feature-box-bg.png');
 
     &--inner {
       @apply pt-10 pb-10 container lg:pt-20 lg:pb-20 lg:pl-[84px];
