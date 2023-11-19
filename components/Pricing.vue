@@ -4,22 +4,24 @@
       <h3 class="text-[30px] lg:text-[41px] xl:text-[53px] font-extrabold">
         Cennik
       </h3>
+      <p
+        class="text-[13px] lg:text-[26px] leading-[19px] lg:leading-[36px] lg:max-w-4xl"
+      >
+        Wycena zlecenia jest uzależniona od ilości, głębokości i
+        <br class="d-none d-lg:block" />
+        lokalizacji rys. Wielkość rys na szybach oblicza się na
+        <br class="d-none d-lg:block" />podstawie jednostek OP.
+      </p>
+
+      <p
+        class="mt-10 text-[13px] lg:text-[22px] leading-[19px] lg:leading-[36px]"
+      >
+        1 OP = powierzchnia wielkośći kartki A4.
+      </p>
       <ul>
         <li>
-          <span class="bg-main">Pojedyńcze małe rysy</span>
-          <span class="bg-[#0278d0]"> od 39 zł</span>
-        </li>
-        <li>
-          <span class="bg-main">Cała szyba czołowa</span>
-          <span class="bg-[#0278d0]">od 199 zł</span>
-        </li>
-        <li>
-          <span class="bg-main">Szyba boczna</span>
-          <span class="bg-[#0278d0]"> od 99 zł</span>
-        </li>
-        <li>
-          <span class="bg-main">Pojedyńczy odprysk</span>
-          <span class="bg-[#0278d0]"> od 59 zł</span>
+          <span class="bg-main">Usuwanie rys 1 OP</span>
+          <span class="bg-[#0278d0]"> od 50 zł</span>
         </li>
       </ul>
       <div>
@@ -49,7 +51,7 @@
       @apply pt-10 pb-10 container lg:pt-20 lg:pb-20 lg:pl-[84px] lg:pr-[90px];
 
       ul {
-        @apply flex flex-col gap-3 mt-6 overflow-hidden;
+        @apply flex flex-col gap-3 overflow-hidden;
         li {
           @apply text-[17px] lg:text-[34px] font-bold  flex items-center justify-between relative;
           &:after {

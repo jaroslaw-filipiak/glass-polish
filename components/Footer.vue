@@ -25,8 +25,8 @@
 
               <a
                 class="font-bold text-[19px] lg:text-[31px] underline"
-                href="mailto:kontakt@polerowanie-szyb.pl"
-                >kontakt@polerowanie-szyb.pl</a
+                href="mailto:sprzedaz@polerowanie-szyb.pl"
+                >sprzedaz@polerowanie-szyb.pl</a
               >
               <p class="font-bold text-[19px] lg:text-[31px]">
                 8:00-18:00 Pon-Sob

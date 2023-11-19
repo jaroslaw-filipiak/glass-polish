@@ -16,12 +16,12 @@
             class="bg-red rounded-[36px] text-white max-lg:w-[214px] btn-main"
           >
             <p v-if="store.showNumber1">
-              <a href="tel:+48453413191">
+              <a href="tel:+48 222 900 004">
                 <img
                   class="max-lg:w-[20px]"
                   src="@/assets/img/icons/phone.svg"
                 />
-                <span> +48 453 413 191</span></a
+                <span> +48 222 900 004</span></a
               >
             </p>
             <p v-else>Pokaż numer</p>

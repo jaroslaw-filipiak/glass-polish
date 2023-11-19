@@ -26,7 +26,7 @@
             />
             <div>+48&nbsp;</div>
             <div>
-              {{ mainStore.showNumber2 ? '453 413 191' : '( pokaż numer )' }}
+              {{ mainStore.showNumber2 ? '222 900 004' : '( pokaż numer )' }}
             </div>
           </div>
         </div>
