@@ -79,14 +79,14 @@
               spaceBetween: 20,
             },
             '1024': {
-              slidesPerView: 3,
+              slidesPerView: 4,
               spaceBetween: 20,
             },
           }"
           @swiper="onSwiper"
           @slideChange="onSlideChange"
         >
-          <swiper-slide v-for="i in 4" :key="i">
+          <swiper-slide v-for="i in 10" :key="i">
             <img
               class="rounded-[38px]"
               :src="'img/slider-szyby-okienne/' + i + '.jpg'"
@@ -100,7 +100,7 @@
         <ul class="text-dark font-bold text-[19px] lg:text-[34px]">
           <li>
             <img src="@/assets/img/icons/cross.png" alt="" />
-            Bez pęknięć
+            bez pęknięć
           </li>
           <li>
             <img src="@/assets/img/icons/cross.png" alt="" />
