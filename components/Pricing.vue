@@ -14,9 +14,9 @@
       </p>
 
       <p
-        class="mt-10 text-[13px] lg:text-[22px] leading-[19px] lg:leading-[36px]"
+        class="mt-10 ext-[13px] lg:text-[26px] leading-[19px] lg:leading-[36px]"
       >
-        1 OP = powierzchnia wielkośći kartki A4.
+        1 OP = powierzchnia wielkość kartki A4.
       </p>
       <ul>
         <li>
@@ -25,10 +25,17 @@
         </li>
       </ul>
       <div>
+        <p class="text-[17px] lg:text-[34px] font-bold mt-6 lg:mt-14 mb-6">
+          Do każdego zlecenia podchodzimy indywidualnie,
+          <br class="d-none d-lg:block" />
+          skontaktuj się z nami wcelu uzyskania wyceny.
+        </p>
+      </div>
+      <div>
         <p
-          class="text-[13px] lg:text-[22px] font-semibold leading-[19px] max-lg:max-w-[210px] lg:max-w-[340px] mt-6 lg:leading-[36px] lg:mt-14"
+          class="text-[13px] lg:text-[22px] font-semibold leading-[19px] max-lg:max-w-[210px] lg:max-w-[340px] lg:leading-[36px]"
         >
-          Także obsługujemy wszystkie inne typy obiektów szklanych:
+          Obsługujemy także wszystkie inne typy obiektów szklanych:
         </p>
         <img
           class="mt-4 max-lg:max-w-[294px]"
