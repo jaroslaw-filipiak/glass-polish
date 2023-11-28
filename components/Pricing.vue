@@ -7,10 +7,10 @@
       <p
         class="text-[13px] lg:text-[26px] leading-[19px] lg:leading-[36px] lg:max-w-4xl"
       >
-        Wycena zlecenia jest uzależniona od ilości, głębokości i
-        <br class="d-none d-lg:block" />
-        lokalizacji rys. Wielkość rys na szybach oblicza się na
-        <br class="d-none d-lg:block" />podstawie jednostek OP.
+        Wycena zlecenia jest uzależniona od ilości, głębokości
+        <br class="d-none d-lg:block" />i lokalizacji rys. Wielkość rys na
+        szybach oblicza się na <br class="d-none d-lg:block" />podstawie
+        jednostek OP.
       </p>
 
       <p
@@ -28,7 +28,7 @@
         <p class="text-[17px] lg:text-[34px] font-bold mt-6 lg:mt-14 mb-6">
           Do każdego zlecenia podchodzimy indywidualnie,
           <br class="d-none d-lg:block" />
-          skontaktuj się z nami wcelu uzyskania wyceny.
+          skontaktuj się z nami w celu uzyskania wyceny.
         </p>
       </div>
       <div>
